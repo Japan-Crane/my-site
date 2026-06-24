@@ -4,415 +4,129 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Аренда японских автокранов | Одесса</title>
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#f5f5f5;
-    color:#222;
-    line-height:1.6;
-}
-
-.hero img{
-    width:100%;
-    display:block;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:60px 20px;
-}
-
-h2{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:40px;
-    color:#0b4c8c;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#fff;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.12);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h3{
-    color:#d60000;
-    margin-bottom:15px;
-    font-size:28px;
-}
-
-.card ul{
-    list-style:none;
-}
-
-.card li{
-    padding:10px 0;
-    border-bottom:1px solid #eee;
-}
-
-.price-block{
-    margin-top:20px;
-    padding-top:15px;
-    border-top:2px solid #eee;
-}
-
-.price-item{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 15px;
-    margin-bottom:10px;
-    background:#f7f7f7;
-    border-radius:8px;
-}
-
-.price-item strong{
-    color:#d60000;
-    font-size:22px;
-}
-
-.popular{
-    background:#d60000;
-    color:white;
-    border-radius:12px;
-    padding:15px;
-}
-
-.popular-label{
-    display:inline-block;
-    background:#ffd700;
-    color:#000;
-    font-size:12px;
-    font-weight:bold;
-    padding:4px 10px;
-    border-radius:20px;
-    margin-bottom:10px;
-}
-
-.popular-content{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.popular-content strong{
-    font-size:28px;
-    color:white;
-}
-
-.notice{
-    text-align:center;
-    margin-top:40px;
-    font-size:20px;
-    font-weight:bold;
-    color:#0b4c8c;
-}
-
-.advantages{
-    background:#111827;
-    color:white;
-}
-
-.advantages h2{
-    color:white;
-}
-
-.advantages ul{
-    max-width:900px;
-    margin:auto;
-    list-style:none;
-}
-
-.advantages li{
-    padding:15px;
-    border-bottom:1px solid rgba(255,255,255,.15);
-}
-
-.contacts{
-    background:white;
-    text-align:center;
-}
-
-.contacts p{
-    font-size:24px;
-    margin:10px 0;
-}
-
-.contact-buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:30px;
-}
-
-.contact-btn{
-    min-width:220px;
-    text-align:center;
-    padding:18px 30px;
-    border-radius:12px;
-    color:white;
-    text-decoration:none;
-    font-size:20px;
-    font-weight:bold;
-    transition:.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
-
-.contact-btn:hover{
-    transform:translateY(-4px);
-}
-
-.call-btn{
-    background:#d60000;
-}
-
-.whatsapp-btn{
-    background:#25D366;
-}
-
-.viber-btn{
-    background:#7360F2;
-}
-
-.floating-btn{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#25D366;
-    color:white;
-    padding:18px 24px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
-    z-index:999;
-}
-
-footer{
-    background:#000;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f5f5f5;color:#222;line-height:1.6}
+.hero{width:100%;position:relative}
+.banner-desktop{width:100%;display:block}
+.mobile-banner{display:none;position:relative}
+.banner-mobile{width:100%;display:block}
+.hotspot-call{position:absolute;left:4%;width:92%;bottom:10.5%;height:4.8%;z-index:100}
+.hotspot-whatsapp{position:absolute;left:4%;width:44%;bottom:1.5%;height:4.8%;z-index:100}
+.hotspot-viber{position:absolute;right:4%;width:44%;bottom:1.5%;height:4.8%;z-index:100}
+.container{max-width:1200px;margin:auto;padding:55px 20px}
+h2{text-align:center;margin-bottom:35px;color:#0b4c8c;font-size:36px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px}
+.card{background:white;border-radius:18px;box-shadow:0 5px 22px rgba(0,0,0,.12);overflow:hidden}
+.card-content{padding:25px}
+.card h3{color:#d60000;margin-bottom:15px;font-size:28px}
+.card ul{list-style:none}
+.card li{padding:10px 0;border-bottom:1px solid #eee}
+.gallery-main{width:100%;height:260px;object-fit:cover;display:block;background:#ddd}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px;background:#f0f0f0}
+.thumbs img{width:100%;height:72px;object-fit:cover;cursor:pointer;border-radius:8px;border:3px solid transparent;transition:.2s}
+.thumbs img:hover{transform:scale(1.03);border-color:#d60000}
+.price-block{margin-top:20px}
+.price-item{display:flex;justify-content:space-between;align-items:center;padding:12px;background:#f7f7f7;border-radius:8px;margin-bottom:10px}
+.price-item strong{color:#d60000;font-size:20px}
+.popular{background:#16a34a;color:white;border-radius:10px;padding:15px}
+.popular-label{display:inline-block;background:#ffd700;color:black;font-size:12px;font-weight:bold;padding:4px 10px;border-radius:20px;margin-bottom:10px}
+.popular-content{display:flex;justify-content:space-between;align-items:center}
+.popular-content strong{font-size:24px}
+.card-order{display:block;margin-top:18px;background:#16a34a;color:white;text-align:center;text-decoration:none;padding:14px;border-radius:10px;font-weight:bold;transition:.2s}
+.card-order:hover{background:#15803d}
+.notice{text-align:center;margin-top:35px;font-size:20px;font-weight:bold;color:#0b4c8c}
+.advantages{background:#111827;color:white}
+.advantages h2{color:white}
+.advantages ul{list-style:none;max-width:900px;margin:auto}
+.advantages li{padding:15px;border-bottom:1px solid rgba(255,255,255,.15)}
+.contacts{background:white;text-align:center}
+.contacts p{font-size:22px;margin:10px 0}
+.contact-buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:25px}
+.contact-btn{padding:15px 25px;border-radius:10px;text-decoration:none;color:white;font-weight:bold;min-width:190px}
+.call-btn{background:#ffd400;color:#111}.whatsapp-btn{background:#25D366}.viber-btn{background:#7360F2}
+footer{background:#000;color:white;text-align:center;padding:20px}
 @media(max-width:768px){
-
-    h2{
-        font-size:30px;
-    }
-
-    .contacts p{
-        font-size:18px;
-    }
-
-    .contact-btn{
-        width:100%;
-    }
-
-    .floating-btn{
-        right:10px;
-        bottom:10px;
-        padding:14px 18px;
-    }
+.banner-desktop{display:none}.mobile-banner{display:block}
+.container{padding:35px 14px}h2{font-size:28px}.cards{grid-template-columns:1fr}
+.gallery-main{height:240px}.contact-buttons{flex-direction:column}.contact-btn{width:100%}
+.price-item,.popular-content{font-size:15px}
 }
 </style>
 </head>
-
 <body>
-
 <section class="hero">
-    <img src="banner.png" alt="Аренда японских автокранов">
+<img class="banner-desktop" src="images/banner.png" alt="Аренда японских автокранов">
+<div class="mobile-banner">
+<img class="banner-mobile" src="images/banner1.png" alt="Аренда японских автокранов">
+<a href="tel:+380983370665" class="hotspot-call" aria-label="Позвонить"></a>
+<a href="https://wa.me/380983370665" target="_blank" class="hotspot-whatsapp" aria-label="WhatsApp"></a>
+<a href="viber://chat?number=%2B380983370665" class="hotspot-viber" aria-label="Viber"></a>
+</div>
 </section>
 
-<a href="tel:+380983370665"
-class="floating-btn">
-📞 Заказать кран
-</a>
-
 <section class="container">
-
 <h2>Наш парк автокранов</h2>
-
 <div class="cards">
 
 <div class="card">
-<h3>KOBELCO RK70</h3>
-
-<ul>
-<li>Грузоподъёмность: 7 тонн</li>
-<li>Длина стрелы: 21 м</li>
-<li>Возможна установка люльки для работы как автовышка</li>
-<li>Компактный кран для работы в ограниченном пространстве</li>
-</ul>
-
-<div class="price-block">
-
-<div class="price-item">
-<span>Полсмены (4 часа)</span>
-<strong>6 000 грн</strong>
+<img class="gallery-main" id="rk70-main" src="images/rk70-1.jpg" alt="KOBELCO RK70">
+<div class="thumbs">
+<img src="images/rk70-1.jpg" onclick="changePhoto('rk70-main',this.src)" alt="KOBELCO RK70 работа">
+<img src="images/rk70-2.jpg" onclick="changePhoto('rk70-main',this.src)" alt="KOBELCO RK70 с люлькой">
+<img src="images/rk70-3.jpg" onclick="changePhoto('rk70-main',this.src)" alt="KOBELCO RK70">
 </div>
-
-<div class="popular">
-<div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div>
-
-<div class="popular-content">
-<span>Смена (8 часов)</span>
-<strong>9 000 грн</strong>
-</div>
-</div>
-
-</div>
+<div class="card-content"><h3>KOBELCO RK70</h3><ul>
+<li>Грузоподъёмность: 7 тонн</li><li>Длина стрелы: 21 м</li><li>Возможна установка люльки для работы как автовышка</li><li>Компактный кран для работы в ограниченном пространстве</li>
+</ul><div class="price-block"><div class="price-item"><span>Полсмены (4 часа)</span><strong>6 000 грн</strong></div><div class="popular"><div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div><div class="popular-content"><span>Смена (8 часов)</span><strong>9 000 грн</strong></div></div></div><a href="tel:+380983370665" class="card-order">Заказать кран</a></div>
 </div>
 
 <div class="card">
-<h3>KATO MR100</h3>
-
-<ul>
-<li>Грузоподъёмность: 10 тонн</li>
-<li>Длина стрелы: 22,5 м</li>
-<li>Возможна установка люльки для работы как автовышка</li>
-<li>Подходит для монтажных и строительных работ</li>
-</ul>
-
-<div class="price-block">
-
-<div class="price-item">
-<span>Полсмены (4 часа)</span>
-<strong>6 000 грн</strong>
+<img class="gallery-main" id="kato-main" src="images/kato-mr100-1.jpg" alt="KATO MR100">
+<div class="thumbs">
+<img src="images/kato-mr100-1.jpg" onclick="changePhoto('kato-main',this.src)" alt="KATO MR100 на объекте">
+<img src="images/kato-mr100-2.jpg" onclick="changePhoto('kato-main',this.src)" alt="KATO MR100 монтаж">
+<img src="images/kato-mr100-3.webp" onclick="changePhoto('kato-main',this.src)" alt="KATO MR100">
 </div>
-
-<div class="popular">
-<div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div>
-
-<div class="popular-content">
-<span>Смена (8 часов)</span>
-<strong>9 000 грн</strong>
-</div>
-</div>
-
-</div>
+<div class="card-content"><h3>KATO MR100</h3><ul>
+<li>Грузоподъёмность: 10 тонн</li><li>Длина стрелы: 22,5 м</li><li>Возможна установка люльки для работы как автовышка</li><li>Подходит для монтажных и строительных работ</li>
+</ul><div class="price-block"><div class="price-item"><span>Полсмены (4 часа)</span><strong>6 000 грн</strong></div><div class="popular"><div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div><div class="popular-content"><span>Смена (8 часов)</span><strong>9 000 грн</strong></div></div></div><a href="tel:+380983370665" class="card-order">Заказать кран</a></div>
 </div>
 
 <div class="card">
-<h3>KOBELCO RK160</h3>
-
-<ul>
-<li>Грузоподъёмность: 16 тонн</li>
-<li>Длина стрелы: 25 м</li>
-<li>Гусек: 6 м</li>
-<li>Для подъёма тяжёлых конструкций и оборудования</li>
-</ul>
-
-<div class="price-block">
-
-<div class="price-item">
-<span>Полсмены (4 часа)</span>
-<strong>9 000 грн</strong>
+<img class="gallery-main" id="rk160-main" src="images/rk160-1.jpg" alt="KOBELCO RK160">
+<div class="thumbs">
+<img src="images/rk160-1.jpg" onclick="changePhoto('rk160-main',this.src)" alt="KOBELCO RK160">
+<img src="images/rk160-2.jpg" onclick="changePhoto('rk160-main',this.src)" alt="KOBELCO RK160 работа">
+<img src="images/rk160-3.webp" onclick="changePhoto('rk160-main',this.src)" alt="KOBELCO RK160 монтаж">
 </div>
-
-<div class="popular">
-<div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div>
-
-<div class="popular-content">
-<span>Смена (8 часов)</span>
-<strong>12 000 грн</strong>
-</div>
+<div class="card-content"><h3>KOBELCO RK160</h3><ul>
+<li>Грузоподъёмность: 16 тонн</li><li>Длина стрелы: 25 м</li><li>Гусек: 6 м</li><li>Для подъёма тяжёлых конструкций и оборудования</li>
+</ul><div class="price-block"><div class="price-item"><span>Полсмены (4 часа)</span><strong>9 000 грн</strong></div><div class="popular"><div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div><div class="popular-content"><span>Смена (8 часов)</span><strong>12 000 грн</strong></div></div></div><a href="tel:+380983370665" class="card-order">Заказать кран</a></div>
 </div>
 
 </div>
-</div>
-
-</div>
-
-<div class="notice">
-Минимальный заказ — 4 часа. Работаем по Одессе и Одесской области.
-</div>
-
+<div class="notice">Минимальный заказ — 4 часа. Работаем по Одессе и Одесской области.</div>
 </section>
 
-<section class="advantages">
-
-<div class="container">
-
+<section class="advantages"><div class="container">
 <h2>Почему выбирают нас</h2>
+<ul><li>✓ Работаем по Одессе и Одесской области</li><li>✓ Быстрая подача техники на объект</li><li>✓ Опытные машинисты</li><li>✓ Японская техника в отличном состоянии</li><li>✓ Возможность работы как автовышка</li><li>✓ Наличный и безналичный расчёт</li></ul>
+</div></section>
 
-<ul>
-<li>✓ Работаем по Одессе и Одесской области</li>
-<li>✓ Быстрая подача техники на объект</li>
-<li>✓ Опытные машинисты</li>
-<li>✓ Японская техника в отличном состоянии</li>
-<li>✓ Возможность установки люльки на KOBELCO RK70 и KATO MR100</li>
-<li>✓ Работа как автокран и как автовышка</li>
-<li>✓ Наличный и безналичный расчёт</li>
-</ul>
-
-</div>
-
-</section>
-
-<section class="contacts">
-
-<div class="container">
-
-<h2>Связаться с нами</h2>
-
-<p><strong>+380 98 337 06 65</strong></p>
-<p><strong>+380 66 273 00 82</strong></p>
-
-<p>Одесса и Одесская область</p>
-
+<section class="contacts"><div class="container">
+<h2>Контакты</h2>
+<p><strong>+380 98 337 06 65</strong></p><p><strong>+380 66 273 00 82</strong></p><p>Одесса и Одесская область</p>
 <div class="contact-buttons">
-
-<a class="contact-btn call-btn"
-href="tel:+380983370665">
-📞 Позвонить
-</a>
-
-<a class="contact-btn whatsapp-btn"
-href="https://wa.me/380983370665"
-target="_blank">
-🟢 WhatsApp
-</a>
-
-<a class="contact-btn viber-btn"
-href="viber://chat?number=%2B380983370665">
-🟣 Viber
-</a>
-
+<a href="tel:+380983370665" class="contact-btn call-btn">📞 Позвонить</a>
+<a href="https://wa.me/380983370665" target="_blank" class="contact-btn whatsapp-btn">🟢 WhatsApp</a>
+<a href="viber://chat?number=%2B380983370665" class="contact-btn viber-btn">🟣 Viber</a>
 </div>
+</div></section>
 
-</div>
-
-</section>
-
-<footer>
-© 2026 Аренда японских автокранов | Одесса и область
-</footer>
-
+<footer>© 2026 Аренда японских автокранов | Одесса и область</footer>
+<script>
+function changePhoto(mainId, src){document.getElementById(mainId).src = src;}
+</script>
 </body>
 </html>
