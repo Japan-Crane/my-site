@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аренда японских автокранов | Одесса</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    color:#222;
+    line-height:1.6;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+    color:#0b4c8c;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#d60000;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card li{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+.price-block{
+    margin-top:20px;
+    padding-top:15px;
+    border-top:2px solid #eee;
+}
+
+.price-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 15px;
+    margin-bottom:10px;
+    background:#f7f7f7;
+    border-radius:8px;
+}
+
+.price-item strong{
+    color:#d60000;
+    font-size:22px;
+}
+
+.popular{
+    background:#d60000;
+    color:white;
+    border-radius:12px;
+    padding:15px;
+}
+
+.popular-label{
+    display:inline-block;
+    background:#ffd700;
+    color:#000;
+    font-size:12px;
+    font-weight:bold;
+    padding:4px 10px;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+
+.popular-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.popular-content strong{
+    font-size:28px;
+    color:white;
+}
+
+.notice{
+    text-align:center;
+    margin-top:40px;
+    font-size:20px;
+    font-weight:bold;
+    color:#0b4c8c;
+}
+
+.advantages{
+    background:#111827;
+    color:white;
+}
+
+.advantages h2{
+    color:white;
+}
+
+.advantages ul{
+    max-width:900px;
+    margin:auto;
+    list-style:none;
+}
+
+.advantages li{
+    padding:15px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.contacts{
+    background:white;
+    text-align:center;
+}
+
+.contacts p{
+    font-size:24px;
+    margin:10px 0;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.contact-btn{
+    min-width:220px;
+    text-align:center;
+    padding:18px 30px;
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.contact-btn:hover{
+    transform:translateY(-4px);
+}
+
+.call-btn{
+    background:#d60000;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+}
+
+.viber-btn{
+    background:#7360F2;
+}
+
+.floating-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    padding:18px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    z-index:999;
+}
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+    h2{
+        font-size:30px;
+    }
+
+    .contacts p{
+        font-size:18px;
+    }
+
+    .contact-btn{
+        width:100%;
+    }
+
+    .floating-btn{
+        right:10px;
+        bottom:10px;
+        padding:14px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <img src="banner.png" alt="Аренда японских автокранов">
+</section>
+
+<a href="tel:+380983370665"
+class="floating-btn">
+📞 Заказать кран
+</a>
+
+<section class="container">
+
+<h2>Наш парк автокранов</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>KOBELCO RK70</h3>
+
+<ul>
+<li>Грузоподъёмность: 7 тонн</li>
+<li>Длина стрелы: 21 м</li>
+<li>Возможна установка люльки для работы как автовышка</li>
+<li>Компактный кран для работы в ограниченном пространстве</li>
+</ul>
+
+<div class="price-block">
+
+<div class="price-item">
+<span>Полсмены (4 часа)</span>
+<strong>6 000 грн</strong>
+</div>
+
+<div class="popular">
+<div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div>
+
+<div class="popular-content">
+<span>Смена (8 часов)</span>
+<strong>9 000 грн</strong>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h3>KATO MR100</h3>
+
+<ul>
+<li>Грузоподъёмность: 10 тонн</li>
+<li>Длина стрелы: 22,5 м</li>
+<li>Возможна установка люльки для работы как автовышка</li>
+<li>Подходит для монтажных и строительных работ</li>
+</ul>
+
+<div class="price-block">
+
+<div class="price-item">
+<span>Полсмены (4 часа)</span>
+<strong>6 000 грн</strong>
+</div>
+
+<div class="popular">
+<div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div>
+
+<div class="popular-content">
+<span>Смена (8 часов)</span>
+<strong>9 000 грн</strong>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h3>KOBELCO RK160</h3>
+
+<ul>
+<li>Грузоподъёмность: 16 тонн</li>
+<li>Длина стрелы: 25 м</li>
+<li>Гусек: 6 м</li>
+<li>Для подъёма тяжёлых конструкций и оборудования</li>
+</ul>
+
+<div class="price-block">
+
+<div class="price-item">
+<span>Полсмены (4 часа)</span>
+<strong>9 000 грн</strong>
+</div>
+
+<div class="popular">
+<div class="popular-label">ПОПУЛЯРНЫЙ ТАРИФ</div>
+
+<div class="popular-content">
+<span>Смена (8 часов)</span>
+<strong>12 000 грн</strong>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="notice">
+Минимальный заказ — 4 часа. Работаем по Одессе и Одесской области.
+</div>
+
+</section>
+
+<section class="advantages">
+
+<div class="container">
+
+<h2>Почему выбирают нас</h2>
+
+<ul>
+<li>✓ Работаем по Одессе и Одесской области</li>
+<li>✓ Быстрая подача техники на объект</li>
+<li>✓ Опытные машинисты</li>
+<li>✓ Японская техника в отличном состоянии</li>
+<li>✓ Возможность установки люльки на KOBELCO RK70 и KATO MR100</li>
+<li>✓ Работа как автокран и как автовышка</li>
+<li>✓ Наличный и безналичный расчёт</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="contacts">
+
+<div class="container">
+
+<h2>Связаться с нами</h2>
+
+<p><strong>+380 98 337 06 65</strong></p>
+<p><strong>+380 66 273 00 82</strong></p>
+
+<p>Одесса и Одесская область</p>
+
+<div class="contact-buttons">
+
+<a class="contact-btn call-btn"
+href="tel:+380983370665">
+📞 Позвонить
+</a>
+
+<a class="contact-btn whatsapp-btn"
+href="https://wa.me/380983370665"
+target="_blank">
+🟢 WhatsApp
+</a>
+
+<a class="contact-btn viber-btn"
+href="viber://chat?number=%2B380983370665">
+🟣 Viber
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Аренда японских автокранов | Одесса и область
+</footer>
+
+</body>
+</html>
